@@ -22,7 +22,7 @@
       "subject": "LoggedIn",
       "issuer": "Campia-Manager",
       "algorithm": "HS256",
-      "expiresIn": "1d"
+      "expiresIn": "JWT_EXPIRE"
     },
     "local": {
       "entity": "user",
