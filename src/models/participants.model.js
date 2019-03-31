@@ -25,7 +25,7 @@ module.exports = function (app) {
     allergies: {type: [String]},
     pathologies: {type: [String]},
     therapies: {type: [String]},
-    isPresent: {type: Boolean, default: true, required: true},
+    isPresent: {type: String, default: 'present', required: true},
   }, {
     timestamps: true
   });
