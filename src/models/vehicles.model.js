@@ -14,6 +14,8 @@ module.exports = function (app) {
     departureKm: {type: Number},
     returnKm: {type: Number},
     crews: [{type: Schema.Types.ObjectId, ref: 'participants'}],
+  }, {
+    timestamps: true
   });
 
   const vehicles = new Schema({

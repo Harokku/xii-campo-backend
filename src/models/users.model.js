@@ -8,6 +8,7 @@ module.exports = function (app) {
 
     email: {type: String, unique: true, lowercase: true, required: true},
     password: {type: String, required: true},
+    userName: {type: String},
     role: {type: String, lowercase: true, enum: ['admin', 'user'], default: 'user'},
 
   }, {

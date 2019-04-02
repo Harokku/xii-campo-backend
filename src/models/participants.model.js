@@ -26,6 +26,7 @@ module.exports = function (app) {
     pathologies: {type: [String]},
     therapies: {type: [String]},
     isPresent: {type: String, default: 'present', required: true},
+    licenses: {type: [Schema.Types.ObjectId], ref: 'licence'}
   }, {
     timestamps: true
   });

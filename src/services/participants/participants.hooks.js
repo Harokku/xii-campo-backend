@@ -1,4 +1,5 @@
 const { authenticate } = require('@feathersjs/authentication').hooks;
+const {populate}= require('feathers-hooks-common');
 
 module.exports = {
   before: {
@@ -12,7 +13,18 @@ module.exports = {
   },
 
   after: {
-    all: [],
+    all: [
+      populate({
+        schema: {
+          include: [{
+            service: 'licence',
+            nameAs: 'licenze',
+            parentField: 'licenses',
+            childField: '_id'
+          }]
+        }
+      })
+    ],
     find: [],
     get: [],
     create: [],
