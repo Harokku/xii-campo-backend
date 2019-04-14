@@ -12,6 +12,7 @@ module.exports = function (app) {
     plate: {type: String, uppercase: true},
     type: {type: String, enum: ['ambulanza', 'pullman', 'camion', 'merci', 'persone', 'auto', 'altro']},
     trailer: {type: Boolean, default: false},
+    status: {type: String, enum: ['disponibile', 'in viaggio', 'non operativo']},
     trips: [{type: Schema.Types.ObjectId, ref: 'trips'}]
 
   }, {
