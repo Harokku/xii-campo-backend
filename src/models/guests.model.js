@@ -20,6 +20,7 @@ module.exports = function (app) {
     mail: {type: String, trim: true, lowercase: true, validate: [validateMail, 'Check e-mail field']},
     personalPhone: {type: String, trim: true},
     allergies: {type: [String]},
+    status: {type: String},
     payed: {type: Boolean},
     amount: {type: Number},
   }, {
