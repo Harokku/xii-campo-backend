@@ -18,9 +18,9 @@
       "header": {
         "typ": "access"
       },
-      "audience": "https://campia-manager.herokuapp.com/",
+      "audience": "https://simulimparando-backend.herokuapp.com",
       "subject": "LoggedIn",
-      "issuer": "Campia-Manager",
+      "issuer": "SimulImparando",
       "algorithm": "HS256",
       "expiresIn": "JWT_EXPIRE"
     },
